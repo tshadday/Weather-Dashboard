@@ -4,3 +4,7 @@ header {
     background-color: darkblue;
     padding: 30px;
 }
+
+#solid {
+    border-top: 3px solid #bbb;
+}
