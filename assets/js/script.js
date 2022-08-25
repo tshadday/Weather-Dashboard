@@ -63,8 +63,8 @@ function displayWeather() {
     var today = moment().format("l");
     dateElement.textContent = today;
 
-    // tempElement.textContent = temp;
-    // windElement.textContent = wind;
-    // humidityElement.textContent = humidity;
-    // UVElement.textContent = UV;
+    // tempElement.textContent = `Temp: ${temp}`;
+    // windElement.textContent = `Wind: ${wind}`;
+    // humidityElement.textContent = `Humidity: ${humidity}`;
+    // UVElement.textContent = `UV: ${UV}`;
 }
