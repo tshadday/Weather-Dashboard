@@ -3,6 +3,7 @@ var geoAPI = "https://api.openweathermap.org/geo/1.0/direct?q="
 const APIkey = "855cf2dfdc5596c339351121659d2804";
 
 // defining today's forecast elements
+var searchButton = document.getElementById("searchButton")
 var cityElement = document.getElementById("city");
 var dateElement = document.getElementById("date");
 var tempElement = document.getElementById("temp");
@@ -52,7 +53,7 @@ function getWeather(weatherURL) {
     }).then(function(weather) {
         console.log(weather);
 
-        
+        // pull data from weather API call for temp, wind, humidity, and UV
 
         displayWeather();
     })
@@ -62,8 +63,8 @@ function displayWeather() {
     var today = moment().format("l");
     dateElement.textContent = today;
 
-    // tempElement.textContent = ;
-    // windElement.textContent = ;
-    // humidityElement.textContent = ;
-    // UVElement.textContent = ;
+    // tempElement.textContent = temp;
+    // windElement.textContent = wind;
+    // humidityElement.textContent = humidity;
+    // UVElement.textContent = UV;
 }
